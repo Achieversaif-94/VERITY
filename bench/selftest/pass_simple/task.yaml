@@ -1,0 +1,10 @@
+id: pass_simple
+category: selftest
+tasks:
+  - id: w1
+    tool: write_file
+    inputs: {path: "hello.txt", content: "hello verity"}
+  - id: r1
+    tool: read_file
+    inputs: {path: "hello.txt"}
+    deps: [w1]

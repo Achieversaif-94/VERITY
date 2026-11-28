@@ -1,0 +1,6 @@
+id: fail_wrong_content
+category: selftest
+tasks:
+  - id: w1
+    tool: write_file
+    inputs: {path: "hello.txt", content: "WRONG"}
